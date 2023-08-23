@@ -1,14 +1,10 @@
 import React from 'react';
 import {ScrollView, StyleSheet, View} from 'react-native';
-import {Button, Text} from 'react-native-paper';
 import HomeCard from '../components/Cards/HomeCard';
 
-export const Home = ({navigation, theme, isScrolling, setIsScrolling}: any) => {
+export const Home = () => {
   return (
-    <ScrollView
-      style={styles.scrollView}
-      // onScroll={handleScroll}
-      scrollEventThrottle={16}>
+    <ScrollView style={styles.scrollView} scrollEventThrottle={16}>
       <HomeCard />
       <HomeCard />
       <HomeCard />

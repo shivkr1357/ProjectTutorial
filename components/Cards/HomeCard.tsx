@@ -1,11 +1,12 @@
 import React from 'react';
 import {StyleSheet, View} from 'react-native';
-import {Button, Card, Text} from 'react-native-paper';
+import {Button, Card, IconButton, Text} from 'react-native-paper';
 
 const HomeCard = () => {
   return (
     <Card style={styles.card}>
       <View style={styles.cardView}>
+        <IconButton icon={'camera'} />
         <Card.Title title="Card Title" subtitle="Card Subtitle" />
         <Card.Content>
           <Text variant="titleSmall">Card title</Text>
